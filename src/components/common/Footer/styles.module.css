@@ -1,0 +1,12 @@
+.footer {
+    height: 200px;
+    background-color: blueviolet;
+    width: 100%;
+    display: grid;
+    color: white;
+
+    .copyRights {
+        align-self: flex-end;
+        justify-self: center;
+    }
+}

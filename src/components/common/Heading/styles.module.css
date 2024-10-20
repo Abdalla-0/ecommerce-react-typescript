@@ -1,0 +1,24 @@
+.headingBox {
+    display: flex;
+    margin-block: 16px;
+    font-size: 28px;
+
+    .arrowBox {
+        margin-inline: 4px;
+
+        .arrowIcon {
+            width: 8px;
+            height: 10px;
+            fill: #a3a3a3;
+            stroke: #a3a3a3;
+        }
+    }
+
+    .prefixTitle {
+        text-transform: capitalize;
+    }
+
+    .disabled {
+        display: none;
+    }
+}

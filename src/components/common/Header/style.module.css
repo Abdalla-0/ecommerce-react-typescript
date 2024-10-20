@@ -1,0 +1,19 @@
+header {
+    a {
+        text-decoration: none;
+
+        &.active {
+            color: #0dcaf0 !important;
+
+        }
+    }
+
+
+    .firstRow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 8px;
+    }
+
+}
