@@ -14,7 +14,12 @@ const useOrders = () => {
         const producDetails = orderList.find((order) => order.id === id);
         const newItems = producDetails?.items ?? [];
         setShowModal(true);
-        setSelectedProduct((prev) => [...prev, ...newItems]);
+        if (Array.isArray(newItems)) {
+            setSelectedProduct((prev) => [...prev, ...newItems]);
+        } else {
+            setSelectedProduct((prev) => [...prev]);
+        }
+
     };
 
     const closeModalHandler = () => {

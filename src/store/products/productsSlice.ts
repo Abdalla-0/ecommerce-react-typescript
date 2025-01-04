@@ -40,5 +40,6 @@ const ProductSlice = createSlice({
         })
     }
 });
+export type { IProductsState }
 export const { ProductsCleanUp } = ProductSlice.actions;
 export default ProductSlice.reducer;

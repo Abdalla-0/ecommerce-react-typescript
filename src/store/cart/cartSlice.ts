@@ -61,7 +61,7 @@ const cartSlice = createSlice({
     }
 })
 
-
+export type { ICartState };
 export { getCartTotalQuantity, getCart }
 export const { addToCart, cartItemChangeQuantity, cartItemRemove, cartFullInfoCleanUp, cleanCartAfterPlaceOrder } = cartSlice.actions;
 export default cartSlice.reducer;

@@ -32,11 +32,12 @@ const cartPresistConfig = {
   storage,
   cart: ["items"]
 }
-const whitelistPresistConfig = {
-  key: "whitelist",
-  storage,
-  whitelist: ["productsId"]
-}
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// const whitelistPresistConfig = {
+//   key: "whitelist",
+//   storage,
+//   whitelist: ["productsId"]
+// }
 const rootReducer = combineReducers({
   auth: persistReducer(authPresistConfig, auth), categories, products, orderSlice, cart: persistReducer(cartPresistConfig, cart), wishlist: wishlist
 })

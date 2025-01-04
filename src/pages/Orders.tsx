@@ -48,7 +48,7 @@ const Orders = () => {
               <tr key={el.id}>
                 <td>#{el.id}</td>
                 <td>
-                  {el.items.length} item(s)
+                  {el.items.length?.toString()} item(s)
                   {" / "}
                   <span
                     style={{ textDecoration: "underLine", cursor: "pointer" }}

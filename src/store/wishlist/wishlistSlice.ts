@@ -75,6 +75,7 @@ const wishlistSlice = createSlice({
 
     }
 })
+export type { IWishlistState }
 export { likeToggle, getWishList };
 export const { wishlistFullInfoCleanUp } = wishlistSlice.actions
 export default wishlistSlice.reducer;

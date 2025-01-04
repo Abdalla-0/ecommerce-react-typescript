@@ -56,6 +56,7 @@ const orderSlice = createSlice({
         })
     },
 })
+export type { IOrderState }
 export { placeOrder, getPlaceOrders }
 export const { resetOrderStatus } = orderSlice.actions;
 export default orderSlice.reducer;

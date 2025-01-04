@@ -13,8 +13,6 @@ interface IAuthState {
     accessToken: string | null,
     loading: TLoading
     error: string | null
-
-
 }
 const initialState: IAuthState = {
     user: null,
@@ -59,9 +57,11 @@ const authSlice = createSlice({
         });
 
         builder.addCase(authLogin.fulfilled, (state, action) => {
-            state.loading = "successeded"
-            state.accessToken = action.payload.accessToken
-            state.user = action.payload.user
+            state.loading = "successeded";
+            if (action.payload) {
+                state.accessToken = action.payload.accessToken
+                state.user = action.payload.user
+            }
         });
 
         builder.addCase(authLogin.rejected, (state, action) => {
@@ -75,6 +75,8 @@ const authSlice = createSlice({
 
     }
 })
+
+export type { IAuthState };
 export { authRegister, authLogin }
 export const { resetUI, authLogout } = authSlice.actions;
 export default authSlice.reducer

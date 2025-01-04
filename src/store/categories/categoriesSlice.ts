@@ -39,5 +39,7 @@ const categoriesSlice = createSlice({
         })
     }
 });
+
+export type { ICategoriesState }
 export const { categoryCleanUp } = categoriesSlice.actions
 export default categoriesSlice.reducer;

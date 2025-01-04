@@ -15,6 +15,7 @@ const authRegister = createAsyncThunk("auth/authRegister", async (formData: TFor
     const response = await axios.post(`/register`, formData)
     try {
         return response.data
+        
     } catch (error) {
         return rejectWithValue(axiosError(error))
     }
