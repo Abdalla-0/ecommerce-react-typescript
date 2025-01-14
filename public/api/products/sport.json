@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Product1",
+    "img": "/img/products/sport/img1.png",
+    "cat_prefix": "sport",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "title": "Product2",
+    "img": "/img/products/sport/img2.png",
+    "cat_prefix": "sport",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "title": "Product3",
+    "img": "/img/products/sport/img3.png",
+    "cat_prefix": "sport",
+    "price": 100
+  }
+]

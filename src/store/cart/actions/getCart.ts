@@ -14,7 +14,7 @@ const getCart = createAsyncThunk('cart/getCart', async (_, thunkAPI) => {
     try {
         const concatenatedIds = itemsId.map(id => `id=${id}`).join("&");
 
-        const response = await axios.get<TResponse>(`/products?${concatenatedIds}`, { signal });
+        const response = await axios.get<TResponse>(`/api/products.json?${concatenatedIds}`, { signal });
         return response.data;
     } catch (error) {
         return rejectWithValue(axiosError(error))

@@ -6,8 +6,9 @@ import { axiosError } from "@utils/index";
 type TResponse = TProduct[];
 const getProducts = createAsyncThunk('products/getProducts', async (prefix: string, thunkAPI) => {
     const { rejectWithValue, signal } = thunkAPI;
+    
     try {
-        const response = await axios.get<TResponse>(`/products?cat_prefix=${prefix}`, { signal, }
+        const response = await axios.get<TResponse>(`/api/products/${prefix}.json`, { signal }
         );
         return response.data;
     } catch (error) {

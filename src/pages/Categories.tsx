@@ -6,6 +6,8 @@ import useCategories from "@hooks/useCategories";
 import { Heading } from "@components/common";
 const Categories = () => {
   const { loading, records, error } = useCategories();
+  console.log(records);
+  
   return (
     <Container>
       <Heading name="Categories" />

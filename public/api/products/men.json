@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Product1",
+    "img": "/img/products/men/img1.png",
+    "cat_prefix": "men",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "title": "Product2",
+    "img": "/img/products/men/img2.png",
+    "cat_prefix": "men",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "title": "Product3",
+    "img": "/img/products/men/img3.png",
+    "cat_prefix": "men",
+    "price": 100
+  }
+]

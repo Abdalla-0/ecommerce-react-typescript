@@ -21,7 +21,7 @@ const ProductInfo = ({
   return (
     <div className={`${styles[`product${direction}`]}`} style={style}>
       <div className={`${styles[`productImg${direction}`]}`} style={style}>
-        <img src={img} alt="title" />
+        <img src={img} alt={title} />
       </div>
       <div className={`${styles[`productInfo${direction}`]}`} style={style}>
         <h2>{title}</h2>
