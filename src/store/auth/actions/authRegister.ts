@@ -12,8 +12,8 @@ type TFormData = {
 
 const authRegister = createAsyncThunk("auth/authRegister", async (formData: TFormData, thunk) => {
     const { rejectWithValue } = thunk
-    const response = await axios.post(`/register`, formData)
     try {
+        const response = await axios.post(`/register`, formData)
         return response.data
         
     } catch (error) {
